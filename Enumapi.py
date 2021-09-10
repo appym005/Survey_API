@@ -14,10 +14,10 @@ f.close()
 def connector():
 
 	try:
-		connection = mysql.connector.connect(host='sapiocoviddb.crtzk0iiuo47.us-west-2.rds.amazonaws.com',
-										 	database='enum_uat',
-										 	user='androiduser',
-										 	password='!Sapio-dss-android19')
+		connection = mysql.connector.connect(host='your_db_server_here',
+										 	database='database',
+										 	user='user',
+										 	password='something')
 		if connection.is_connected():
 			db_Info = connection.get_server_info()
 			print("Connected to MySQL Server version ", db_Info)
